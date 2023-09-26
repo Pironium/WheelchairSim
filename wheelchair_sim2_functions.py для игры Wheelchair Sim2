@@ -1,0 +1,8 @@
+# This is the new feature for Wheelchair Sim2
+def advanced_maneuvering(player):
+    if player.is_enabled("AdvancedMode"):
+        player.velocity *= 1.5
+        player.turning_radius /= 2
+        player.boost_available = True
+    else:
+        print("Advanced mode is not enabled for this player.")
